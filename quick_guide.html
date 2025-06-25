@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Guide - NeuralMarket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+        }
+        .navbar-gradient { 
+            background: linear-gradient(90deg, #1e3a8a 0%, #2563eb 100%); 
+        }
+    </style>
+</head>
+<body class="bg-slate-100">
+    <nav class="navbar-gradient shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </a>
+                    <div class="ml-3">
+                        <a href="index.html" class="text-2xl font-bold text-white">NeuralMarket</a> 
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="dashboard.html" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
+                        <a href="analysis.html" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Analysis Tool</a>
+                        <a href="#" id="logoutButtonNav" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden"> 
+                    <button type="button" id="mobileMenuButton" class="bg-blue-700 inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white" aria-controls="mobile-menu-guide" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <span id="mobileMenuIconContainer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block h-6 w-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu-guide"> 
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="dashboard.html" class="text-gray-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+                <a href="analysis.html" class="text-gray-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Analysis Tool</a>
+                <a href="#" id="logoutButtonMobileNav" class="text-gray-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-1 h-4 w-4"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                    Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="navbar-gradient shadow-md text-white"> 
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold">NeuralMarket Quick Guide</h1> 
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow-xl rounded-lg p-6 md:p-8">
+            
+            <p class="text-sm text-gray-500 mb-6">Last updated: May 31, 2025</p>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3 mt-6 first:mt-0">Welcome to NeuralMarket!</h2>
+            <p class="text-gray-600 mb-3 leading-relaxed">This guide will help you get started with analyzing stock sentiment using our platform. NeuralMarket leverages AI to provide insights into news surrounding Pakistani stocks.</p>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3 mt-6">Getting Started</h2>
+            <p class="text-gray-600 mb-3 leading-relaxed">Using NeuralMarket is straightforward. Here’s a step-by-step guide:</p>
+            <ul class="list-disc list-inside pl-4 text-gray-600 mb-3 leading-relaxed space-y-1">
+                <li><strong>Navigate to the Analysis Tool:</strong> From your dashboard, click on "Analysis Tool" in the navigation bar or the prominent "Analyze Stock Sentiment" card.</li>
+                <li><strong>Enter a Stock Symbol:</strong> In the input field, type the PSX stock symbol you're interested in (e.g., <code class="bg-gray-200 text-gray-800 px-1 py-0.5 rounded-md text-sm">LUCK</code>, <code class="bg-gray-200 text-gray-800 px-1 py-0.5 rounded-md text-sm">HBL</code>, <code class="bg-gray-200 text-gray-800 px-1 py-0.5 rounded-md text-sm">OGDC</code>). Our system works best with official symbols.</li>
+                <li><strong>Click "Analyze":</strong> Once you've entered the symbol, click the "Analyze" button.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3 mt-6">Understanding the Results</h2>
+            <p class="text-gray-600 mb-3 leading-relaxed">After a brief processing time, you'll see the analysis results, which include:</p>
+            <ul class="list-disc list-inside pl-4 text-gray-600 mb-3 leading-relaxed space-y-1">
+                <li><strong>Stock Details:</strong> The company name and the symbol you queried.</li>
+                <li><strong>Current Price:</strong> The latest available price for the stock (data provided by EODHD).</li>
+                <li><strong>Overall News Sentiment:</strong> An aggregated sentiment (Positive, Negative, or Neutral) based on recent news, along with a visual sentiment bar.</li>
+                <li><strong>Recent News Headlines:</strong> A list of recent news articles related to the stock. Each headline will show:
+                    <ul class="list-disc list-inside pl-6 mt-1 text-gray-600 mb-3 leading-relaxed space-y-1"> 
+                        <li>Its individual sentiment classification (Positive, Negative, Neutral, or N/A if undetermined).</li>
+                        <li>The sentiment score (typically ranging from -1 for very negative to +1 for very positive).</li>
+                        <li>The publisher and publication date.</li>
+                        <li>A link to read the full article.</li>
+                    </ul>
+                </li>
+                <li><strong>News Sentiment Distribution:</strong> A bar chart showing the number of recent articles classified as Positive, Neutral, and Negative.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2 mt-4">Interpreting Sentiment Scores</h3>
+            <p class="text-gray-600 mb-3 leading-relaxed">The sentiment score provides a numerical representation of the sentiment:</p>
+            <ul class="list-disc list-inside pl-4 text-gray-600 mb-3 leading-relaxed space-y-1">
+                <li><strong>Positive Scores (e.g., > 0.15):</strong> Indicate generally positive news sentiment.</li>
+                <li><strong>Negative Scores (e.g., < -0.15):</strong> Indicate generally negative news sentiment.</li>
+                <li><strong>Neutral Scores (around 0):</strong> Indicate neutral or mixed sentiment, or that the model couldn't determine a strong sentiment from the text.</li>
+            </ul>
+            <p class="text-gray-600 mb-3 leading-relaxed">The overall sentiment label is determined by looking at the majority of article sentiments and the average score. Remember, this is an AI-driven analysis and should be used as one of many tools for your investment research, not as sole financial advice.</p>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3 mt-6">Exporting Reports</h2>
+            <p class="text-gray-600 mb-3 leading-relaxed">You can export the current analysis view as a PDF document for offline reference:</p>
+            <ul class="list-disc list-inside pl-4 text-gray-600 mb-3 leading-relaxed space-y-1">
+                <li>After an analysis is displayed, click the "Export Report (PDF)" button located in the "Stock Details" card.</li>
+                <li>Your browser will then download the generated PDF file.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3 mt-6">Tips for Best Results</h2>
+            <ul class="list-disc list-inside pl-4 text-gray-600 mb-3 leading-relaxed space-y-1">
+                <li><strong>Use Official Stock Symbols:</strong> For the most accurate price data and targeted news, use the official PSX ticker symbols.</li>
+                <li><strong>Consider Multiple Factors:</strong> Sentiment analysis is a powerful tool, but always consider it alongside other fundamental and technical analysis before making investment decisions.</li>
+                <li><strong>Check Publication Dates:</strong> Pay attention to the dates of the news articles to understand the timeliness of the sentiment.</li>
+            </ul>
+
+            <div class="mt-8 text-center">
+                <a href="dashboard.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors shadow-md hover:shadow-lg">Back to Dashboard</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 py-12 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="currentYear"></span> NeuralMarket. All rights reserved.</p>
+            <p class="mt-1 text-sm text-slate-400">Empowering Your Investment Decisions.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const user = JSON.parse(localStorage.getItem('neuralMarketUser'));
+            if (!user) {
+                window.location.href = 'login.html'; 
+                return; 
+            }
+
+            const menuIconSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block h-6 w-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+            const xIconSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block h-6 w-6"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobile-menu-guide'); 
+            const mobileMenuIconContainer = document.getElementById('mobileMenuIconContainer');
+            if (mobileMenuButton && mobileMenu && mobileMenuIconContainer) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenuIconContainer.innerHTML = mobileMenu.classList.contains('hidden') ? menuIconSVG : xIconSVG;
+                    mobileMenuButton.setAttribute('aria-expanded', !mobileMenu.classList.contains('hidden'));
+                });
+            }
+            
+            const currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) { currentYearElement.textContent = new Date().getFullYear(); }
+            
+            const handleLogout = async () => {
+                localStorage.removeItem('neuralMarketUser');
+                showModal('You have been logged out. Redirecting to login page...');
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                }, 2000);
+            };
+
+            const logoutButtonNav = document.getElementById('logoutButtonNav');
+            const logoutButtonMobileNav = document.getElementById('logoutButtonMobileNav');
+            if(logoutButtonNav) logoutButtonNav.addEventListener('click', handleLogout);
+            if(logoutButtonMobileNav) logoutButtonMobileNav.addEventListener('click', handleLogout);
+        });
+
+        function showModal(message) { 
+            const existingModal = document.getElementById('customModal');
+            if (existingModal) existingModal.remove();
+            const modalOverlay = document.createElement('div');
+            modalOverlay.id = 'customModal';
+            modalOverlay.className = 'fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center z-50 p-4';
+            const modalContent = document.createElement('div');
+            modalContent.className = 'p-5 border border-slate-300 w-full max-w-md shadow-lg rounded-md bg-white';
+            const modalText = document.createElement('div');
+            modalText.className = 'mt-3 text-center';
+            const messageParagraph = document.createElement('p');
+            messageParagraph.className = 'text-sm text-slate-700';
+            messageParagraph.textContent = message;
+            modalText.appendChild(messageParagraph);
+            modalContent.appendChild(modalText);
+            const actionsDiv = document.createElement('div');
+            actionsDiv.className = 'mt-4 px-4 py-3 text-center';
+            const closeButton = document.createElement('button');
+            closeButton.id = 'closeModalButton';
+            closeButton.className = 'px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-base font-medium rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50';
+            closeButton.textContent = 'OK';
+            actionsDiv.appendChild(closeButton);
+            modalContent.appendChild(actionsDiv);
+            modalOverlay.appendChild(modalContent);
+            document.body.appendChild(modalOverlay);
+            closeButton.addEventListener('click', () => modalOverlay.remove());
+            modalOverlay.addEventListener('click', (event) => { if (event.target === modalOverlay) modalOverlay.remove(); });
+        }
+    </script>
+</body>
+</html>
