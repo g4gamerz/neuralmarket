@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Fauji Foods’ turnaround gathers pace; posts highest ever quarterly profit of Rs 335 million - Profit by Pakistan Today",
+        "description": "Fauji Foods’ turnaround gathers pace; posts highest ever quarterly profit of Rs 335 million  Profit by Pakistan Today",
+        "published_date": "Wed, 23 Apr 2025 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTDdmQVFETHRtYWhuQjg0NU1qVW9vZFhoNmUzdVQ0MzBUZjV1c200VERNRVpyRUpqSFU0Y1lIdUZIeVpvMHZxWWdTbUNlV1VSYjJyN1hfb25lOHNFVkFJTWZLcEJxZ2tnSDlVWDMzVHAxNGFhRWpGT1d2cDgxUlMzamJSN3BIX3NULV9PaVNWaTVvbkVmbE5iRnJXUHVmY0VyVWZGbnhnNzZnQ0JsblpqNUlpbFV6TjVNNUJ6ZUYwR2Item9HaVRoS1hxcFByb05NLXNN?oc=5&hl=en-PK&gl=PK&ceid=PK:en",
+        "publisher_name": "Profit by Pakistan Today",
+        "publisher_href": "https://profit.pakistantoday.com.pk",
+        "analyzed_text": "Fauji Foods’ turnaround gathers pace; posts highest ever quarterly profit of Rs 335 million - Profit by Pakistan Today",
+        "sentiment_label": "Positive",
+        "sentiment_score": 0.8790704607963562,
+        "sentence_sentiments": [
+            {
+                "original_input_text": "Fauji Foods’ turnaround gathers pace; posts highest ever quarterly profit of Rs 335 million - Profit by Pakistan Today",
+                "sentence_analyzed": "Fauji Foods’ turnaround gathers pace; posts highest ever quarterly profit of Rs 335 million - Profit by Pakistan Today",
+                "sentiment_label": "Positive",
+                "sentiment_score": 0.8790704607963562
+            }
+        ]
+    },
+    {
+        "title": "Fauji Cement reports 38% increase in Profit to Rs. 7.27 billion for half-year ended December 2024 - Profit by Pakistan Today",
+        "description": "Fauji Cement reports 38% increase in Profit to Rs. 7.27 billion for half-year ended December 2024  Profit by Pakistan Today",
+        "published_date": "Tue, 25 Feb 2025 08:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQS3Q0WWY3STVOMkU2djlWd25fUEhENkxLODlhazVPSHNlS2dVaEhKS3E5ZGZvWGwzWWg3WDhGdzkybzZtZ3pTTlAxaURaODd5SC1lTjJ5OWdQV0VXMVBXWThaZkw0b1NaQlhJWFpIdGFuRDNBV2E3Q01BeU9ueldqamplbno3d0F2WE1ONWVVUTE4N3BZTHdycGY2Q19jcTVabHRIV1B6MkJxTDZIeVc5aHVOc3VQTEVDeVdHbmxZSVNtTmlXTEY2SENLdFV2QXRXNFZ4cDU4c2lDd1E?oc=5&hl=en-PK&gl=PK&ceid=PK:en",
+        "publisher_name": "Profit by Pakistan Today",
+        "publisher_href": "https://profit.pakistantoday.com.pk",
+        "analyzed_text": "Fauji Cement reports 38% increase in Profit to Rs. 7.27 billion for half-year ended December 2024 - Profit by Pakistan Today",
+        "sentiment_label": "Positive",
+        "sentiment_score": 0.5439133867621422,
+        "sentence_sentiments": [
+            {
+                "original_input_text": "Fauji Cement reports 38% increase in Profit to Rs. 7.27 billion for half-year ended December 2024 - Profit by Pakistan Today",
+                "sentence_analyzed": "Fauji Cement reports 38% increase in Profit to Rs.",
+                "sentiment_label": "Positive",
+                "sentiment_score": 0.9267047643661499
+            },
+            {
+                "original_input_text": "Fauji Cement reports 38% increase in Profit to Rs. 7.27 billion for half-year ended December 2024 - Profit by Pakistan Today",
+                "sentence_analyzed": "7.27 billion for half-year ended December 2024 - Profit by Pakistan Today",
+                "sentiment_label": "Neutral",
+                "sentiment_score": 0.16112200915813446
+            }
+        ]
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "title": "IMF delays approval of circular debt retirement plan for Pakistan’s petroleum sector - Profit by Pakistan Today",
+        "description": "IMF delays approval of circular debt retirement plan for Pakistan’s petroleum sector  Profit by Pakistan Today",
+        "published_date": "Sat, 24 May 2025 03:23:14 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOT01oMFhvejNaVHVrZHcxR1lnckpyMlpNTWNWcEdkbnJXNm9lREJMeHFJS2ZHeHpPWG5NMEtldVlfZ2x4YTRFeTFuYWh3OGtqNDlZUVN6S3U4bllwd2tqc0J2endfdS1fS3BHQkN2OE9ud0xZMXRVWTh4c0V1OGJrbFlSZmtObDNzcGJGNlFzNi1BMUlEUGFTMThWOXd4Wmo0dWpOeThJUTZCRm0waVl1dEs1eWN5blo1VlFyLXdTcE9IS1dVMkxDZHRnWQ?oc=5&hl=en-PK&gl=PK&ceid=PK:en",
+        "publisher_name": "Profit by Pakistan Today",
+        "publisher_href": "https://profit.pakistantoday.com.pk",
+        "analyzed_text": "IMF delays approval of circular debt retirement plan for Pakistan’s petroleum sector - Profit by Pakistan Today",
+        "sentiment_label": "Negative",
+        "sentiment_score": -0.8610568046569824,
+        "sentence_sentiments": [
+            {
+                "original_input_text": "IMF delays approval of circular debt retirement plan for Pakistan’s petroleum sector - Profit by Pakistan Today",
+                "sentence_analyzed": "IMF delays approval of circular debt retirement plan for Pakistan’s petroleum sector - Profit by Pakistan Today",
+                "sentiment_label": "Negative",
+                "sentiment_score": -0.8610568046569824
+            }
+        ]
+    },
+    {
+        "title": "Kuwait extends oil credit facility to Pakistan for two years - Business Recorder",
+        "description": "Kuwait extends oil credit facility to Pakistan for two years  Business Recorder",
+        "published_date": "Wed, 16 Apr 2025 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZVpUdXNYTTBoS1RuYXVLd2xrWkJtRG1YUzg3Q3lfTDQxN3lzMzR4OFpfLU9CTXNnSkE1d3J4SmhYdUZlSkZaanFKaXFCSzdoaHE0Wk8zMXFybk91dG45Z0R3aUlHRVp1M2UwOG9uSUs0S0ZzZW1TN2swMTRMTi1xZnp4d2hjMGo5aTJVM28tUGhLd1FKc2FUcGNRRVBCQTFfY08ybzVqbzl6UdIBVkFVX3lxTE5Tc2VoaUlZem1Xb3pXSGJTZ3Z0azlxZVJ4WVM2U2pCcklGYjZnX3FWS1lGWnF6RFFFMGNnNUliWUEyZzlWLW0tSWE5NUtrV3N4MDFWbklR?oc=5&hl=en-PK&gl=PK&ceid=PK:en",
+        "publisher_name": "Business Recorder",
+        "publisher_href": "https://www.brecorder.com",
+        "analyzed_text": "Kuwait extends oil credit facility to Pakistan for two years - Business Recorder",
+        "sentiment_label": "Positive",
+        "sentiment_score": 0.77671879529953,
+        "sentence_sentiments": [
+            {
+                "original_input_text": "Kuwait extends oil credit facility to Pakistan for two years - Business Recorder",
+                "sentence_analyzed": "Kuwait extends oil credit facility to Pakistan for two years - Business Recorder",
+                "sentiment_label": "Positive",
+                "sentiment_score": 0.77671879529953
+            }
+        ]
+    }
+]
