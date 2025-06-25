@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NeuralMarket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+        }
+        .navbar-gradient { 
+            background: linear-gradient(90deg, #1e3a8a 0%, #2563eb 100%); 
+        }
+        .welcome-banner {
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-100"> 
+    <nav class="navbar-gradient shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </a>
+                    <div class="ml-3">
+                        <a href="index.html" class="text-2xl font-bold text-white">NeuralMarket</a> 
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="dashboard.html" class="text-gray-200 bg-blue-700 px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
+                        <a href="analysis.html" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Analysis Tool</a>
+                        <a href="#" id="logoutButtonNav" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden"> 
+                    <button type="button" id="mobileMenuButton" class="bg-blue-700 inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white" aria-controls="mobile-menu-dashboard" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <span id="mobileMenuIconContainer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block h-6 w-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu-dashboard"> 
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="dashboard.html" class="text-gray-200 bg-blue-700 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+                <a href="analysis.html" class="text-gray-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Analysis Tool</a>
+                <a href="#" id="logoutButtonMobileNav" class="text-gray-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-1 h-4 w-4"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                    Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="welcome-banner text-white shadow-md rounded-b-lg">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold" id="welcomeUserHeading">Welcome back!</h1>
+            <p class="mt-1 text-lg text-blue-100" id="dashboardSubtitle">Your central hub for stock sentiment analysis.</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <section class="mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 text-center">
+                 <div class="flex items-center justify-center h-16 w-16 rounded-lg text-white bg-blue-600 mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="10" y1="18" y2="3M14" y2="21" y1="14" x1="6" /><circle cx="12" cy="12" r="10" /></svg>
+                </div>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Analyze Stock Sentiment</h2>
+                <p class="text-gray-600 mb-6">Get real-time news sentiment analysis, current stock prices, and insights for Pakistani stocks. Enter a stock symbol to begin.</p>
+                <a href="analysis.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg text-sm transition-colors shadow-md hover:shadow-lg">Go to Analysis Tool</a>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-6 text-center md:text-left">Explore NeuralMarket Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 flex flex-col hover:shadow-2xl hover:-translate-y-1">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full text-white mx-auto mb-5 shadow-lg bg-green-500 hover:bg-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2Zm0 0L8 18m12 4V10L8 2m0 0v4h8V2m0 8H8m0 4h8m0 4H8"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">News Aggregation</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Access up-to-date news headlines for specific Pakistani stocks from various reliable sources.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 flex flex-col hover:shadow-2xl hover:-translate-y-1">
+                     <div class="flex items-center justify-center h-16 w-16 rounded-full text-white mx-auto mb-5 shadow-lg bg-indigo-500 hover:bg-indigo-600">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-2.5 19.4A10 10 0 0 0 12 2Z"/><path d="M2 12h20"/><path d="M12 2a10 10 0 0 1 2.5 19.4A10 10 0 0 1 12 2Z"/><path d="M12 2v20"/><path d="m4.929 4.929 2.121 2.121m10 -2.121-2.121 2.121M4.929 19.071l2.121-2.121m10 2.121-2.121-2.121M17 12a5 5 0 0 0-10 0"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">AI-Powered Sentiment</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Our advanced FinBERT model analyzes news sentiment for a clear market perspective.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 flex flex-col hover:shadow-2xl hover:-translate-y-1">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full text-white mx-auto mb-5 shadow-lg bg-pink-500 hover:bg-pink-600">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Current Stock Prices</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Get the latest stock prices via EODHD API integration, alongside sentiment data.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 flex flex-col hover:shadow-2xl hover:-translate-y-1">
+                     <div class="flex items-center justify-center h-16 w-16 rounded-full text-white mx-auto mb-5 shadow-lg bg-amber-500 hover:bg-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Exportable Reports</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Easily export your detailed sentiment analysis reports in PDF format for offline use.</p>
+                </div>
+                
+                 <a href="quick_guide.html" class="bg-white rounded-xl shadow-lg p-6 text-center transition-all duration-300 flex flex-col hover:shadow-2xl hover:-translate-y-1 group hover:ring-2 hover:ring-blue-400 hover:ring-offset-2"> 
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full text-white mx-auto mb-5 shadow-lg bg-teal-500 group-hover:bg-teal-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Quick Guide</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Learn how to use NeuralMarket effectively and understand the insights provided.</p>
+                </a>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 py-12 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="currentYear"></span> NeuralMarket. All rights reserved.</p>
+            <p class="mt-1 text-sm text-slate-400">Empowering Your Investment Decisions.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const user = JSON.parse(localStorage.getItem('neuralMarketUser'));
+            if (!user) {
+                window.location.href = 'login.html'; 
+                return; 
+            }
+
+            const welcomeUserHeading = document.getElementById('welcomeUserHeading');
+            const dashboardSubtitle = document.getElementById('dashboardSubtitle');
+            if (user.fullName) {
+                const firstName = user.fullName.split(' ')[0];
+                if(welcomeUserHeading) welcomeUserHeading.textContent = `Welcome back, ${firstName}!`;
+            } else if (user.email) {
+                 if(welcomeUserHeading) welcomeUserHeading.textContent = `Welcome back!`;
+                 if(dashboardSubtitle) dashboardSubtitle.textContent = `Logged in as ${user.email}. Ready to analyze?`;
+            }
+
+            const menuIconSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block h-6 w-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+            const xIconSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block h-6 w-6"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobile-menu-dashboard'); 
+            const mobileMenuIconContainer = document.getElementById('mobileMenuIconContainer');
+            if (mobileMenuButton && mobileMenu && mobileMenuIconContainer) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenuIconContainer.innerHTML = mobileMenu.classList.contains('hidden') ? menuIconSVG : xIconSVG;
+                    mobileMenuButton.setAttribute('aria-expanded', !mobileMenu.classList.contains('hidden'));
+                });
+            }
+            
+            const currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) { currentYearElement.textContent = new Date().getFullYear(); }
+            
+            const handleLogout = async () => {
+                localStorage.removeItem('neuralMarketUser');
+                showModal('You have been logged out. Redirecting to login page...');
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                }, 2000);
+            };
+
+            const logoutButtonNav = document.getElementById('logoutButtonNav');
+            const logoutButtonMobileNav = document.getElementById('logoutButtonMobileNav');
+            if(logoutButtonNav) logoutButtonNav.addEventListener('click', handleLogout);
+            if(logoutButtonMobileNav) logoutButtonMobileNav.addEventListener('click', handleLogout);
+        });
+
+        function showModal(message) { 
+            const existingModal = document.getElementById('customModal');
+            if (existingModal) existingModal.remove();
+            const modalOverlay = document.createElement('div');
+            modalOverlay.id = 'customModal';
+            modalOverlay.className = 'fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center z-50 p-4';
+            const modalContent = document.createElement('div');
+            modalContent.className = 'p-5 border border-slate-300 w-full max-w-md shadow-lg rounded-md bg-white';
+            const modalText = document.createElement('div');
+            modalText.className = 'mt-3 text-center';
+            const messageParagraph = document.createElement('p');
+            messageParagraph.className = 'text-sm text-slate-700';
+            messageParagraph.textContent = message;
+            modalText.appendChild(messageParagraph);
+            modalContent.appendChild(modalText);
+            const actionsDiv = document.createElement('div');
+            actionsDiv.className = 'mt-4 px-4 py-3 text-center';
+            const closeButton = document.createElement('button');
+            closeButton.id = 'closeModalButton';
+            closeButton.className = 'px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-base font-medium rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50';
+            closeButton.textContent = 'OK';
+            actionsDiv.appendChild(closeButton);
+            modalContent.appendChild(actionsDiv);
+            modalOverlay.appendChild(modalContent);
+            document.body.appendChild(modalOverlay);
+            closeButton.addEventListener('click', () => modalOverlay.remove());
+            modalOverlay.addEventListener('click', (event) => { if (event.target === modalOverlay) modalOverlay.remove(); });
+        }
+    </script>
+</body>
+</html>
